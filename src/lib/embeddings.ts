@@ -10,7 +10,7 @@ export async function generateEmbedding(text : string){
     const input = text.replace("\n" , " ");
 
     const { embedding } = await embed({
-        model:mistral.embedding("mistral-embed"),
+        model:mistral.textEmbeddingModel("mistral-embed"),
         value:input
     })
     return embedding;

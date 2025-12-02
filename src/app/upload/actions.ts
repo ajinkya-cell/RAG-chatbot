@@ -29,7 +29,7 @@ export async function processPdfFile(formData: FormData) {
 
     // Generate embeddings
     const embeddings = await generateEmbeddings(chunks);
-
+    console.log("hi")
     // Store in database
     const records = chunks.map((chunk, index) => ({
       content: chunk,

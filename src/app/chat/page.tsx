@@ -37,7 +37,7 @@ export default function RAGChatBot() {
 
   return (
     <div className="max-w-4xl mx-auto p-6 relative size-full h-[calc(100vh-4rem)]">
-      <div className="flex flex-col h-full">
+      <div className="flex flex-col backdrop-blur-3xl  rounded-4xl to-teal-900 rounded-3xl h-full">
         <Conversation className="h-full">
           <ConversationContent>
             {messages.map((message) => (
